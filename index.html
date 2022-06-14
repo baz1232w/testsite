@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+            body{
+                background:url("phone.jpg");
+                max-width:860px ;
+                margin: 0 auto;
+            }
+            header{
+                text-align: center;
+                margin: 70px 0px 50px 0px ;
+            }
+            h1{
+                margin-top: -10px;
+                color: black;
+                text-shadow: 1px 1px white;
+                font-family: anton, sans-serif;
+                font-size: 60px;
+            }
+            h2{
+                text-shadow: 1px 2px black;
+                color: white;
+                margin-top: -40px;
+                font-size: 20px;
+            }
+            span{
+                float: right;
+            }
+
+            .show p{
+                height: 150px;
+            }
+
+            .show small{
+                opacity: 1;
+            }
+
+            p{
+                cursor: pointer;
+                transition: 0.6s;
+                font-family: anton,sans-serif;
+                height: 15.2px;
+                line-height: 20px;
+                background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, .4));
+                color: white;
+                padding:10px;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                font-size: 20px;
+            }
+            small{
+                opacity: 0;
+            }
+            .first-article{
+                cursor: pointer;
+                background-image: url("bg2.png");
+            }
+
+            .second-article{
+                cursor: pointer;
+                background-image: url("bg3png.jpg");
+            }
+            .third-article{
+                cursor: pointer;
+                background-image: url("bh.png");
+            }
+
+            article{
+
+                border-radius: 20px;
+                margin: 50px 10px 20px 10px;
+                position: relative;
+                background-size: cover;
+                height: 220px;
+            }
+
+            @media (max-width:500px) {
+                p{      
+                    text-align: justify;
+                    font-size: 15px;
+                }
+
+                h1{
+                    margin: 0px;
+                    font-size: 30px;
+                }
+
+                h2{
+                    margin-top: 0px;
+                }
+                .show p{
+                height: 170px;
+                }
+            }
+            
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Security Blog's</h1>
+        <h2>Protect Your Home</h2>
+    </header>
+    <main>
+        <article class="first-article" >
+            <p>
+                Lorem ipsum<span>Save your Life</span><br />
+                <small>Orem ipsum dolor sit amet, consectetur Dolor sit amet consectetur adipisicing elit. Earum saepe
+                    magni explicabo, ducimus deleniti
+                    numquam consectetur non sit dolorum sequi debitis veritatis unde ipsam quos vel, ipsum, magnam
+                    reprehenderit! Iure, dolorum ratione? Quisquam illum assumenda eveniet, libero vitae non ratione.
+                    Veritatis architecto voluptate esse consequatur maxime nam quam! Harum, earum.</small>
+            </p>
+        </article>
+        <article class="second-article">
+            <p>
+                Lorem ipsum<span>Protect your family</span> <br />
+                <small>Orem ipsum dolor sit amet, consectet consectetur adipisicing elit. Tenetur autem cumque officiis
+                    perferendis
+                    provident libero nam nulla! Assumenda sit exercitationem eius vitae quaerat ipsum ullam quam
+                    ducimus,
+                    officia, obcaecati quas iste? Assumenda, velit soluta. Doloribus qui tempora dignissimos nesciunt
+                    mollitia odio velit ullam. Rerum totam atque cupiditate unde quam quia.</small>
+            </p>
+        </article>
+        <article class="third-article">
+            <p>
+                Lorem ipsum dolor<span>Hold your money safety</span><br />
+                <small>Sit amet consectetur adipisicing elit. Obcaecati sed voluptate quidem velit
+                    exercitationem repellat repudiandae quisquam minima quia officia, non tempora illum natus distinctio
+                    error qui eum laboriosam tempore? Odio aperiam nobis adipisci consectetur fugit est recusandae
+                    praesentium sit itaque rem non voluptate magnam, ut perferendis id enim doloribus?</small>
+
+            </p>
+        </article>
+    </main>
+    <script>
+        $("article").on("click",function(){
+            $(this).toggleClass("show")
+        })
+    </script>
+</body>
+
+</html>
